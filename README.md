@@ -158,14 +158,11 @@ dostonbek@dostonbek-virtual-machine:~/ros2_ws$ . install/local_setup.bash
 You can modify turtlesim in your overlay by editing the title bar on the turtlesim window. To do this, locate the turtle_frame.cpp file in ~/ros2_ws/src/ros_tutorials/turtlesim/src. Open turtle_frame.cpp with your preferred text editor.
 
 On line 52 you will see the function setWindowTitle("TurtleSim");. Change the value ”TurtleSim” to ”MyTurtleSim”, and save the file.
-```cpp
   setFixedSize(500, 500);
   setWindowTitle("MyTurtleSim");
 
   srand(time(NULL));
-
-```
-- Return to first terminal where you ran colcon build earlier and run it again.
+Return to first terminal where you ran colcon build earlier and run it again.
 dostonbek@dostonbek-virtual-machine:~/ros2_ws$ colcon build
 Finished <<< launch_testing_examples [12.3s]
 Starting >>> turtlesim
@@ -180,9 +177,203 @@ Finished <<< my_package [7.72s]
 Finished <<< turtlesim [1min 33s]                             
 
 Summary: 24 packages finished [3min 18s]
+```
+![Screenshot from 2022-10-12 22-08-41](https://user-images.githubusercontent.com/81208782/195354306-6c637f17-32b7-4d68-9862-759efca057d5.png)
 
+# Create a package
+```bash
+# in this case i already have these files!
+dostonbek@dostonbek-virtual-machine:~/ros2_ws/src$ ros2 pkg create --build-type ament_python --node-name my_node my_package
 
+Aborted!
+The directory already exists: ./my_package
+Either remove the directory or choose a different destination directory or package name
 
+# BUILDING PACKAGES
+dostonbek@dostonbek-virtual-machine:~/ros2_ws$ colcon build --packages-select my_package
+Starting >>> my_package
+--- stderr: my_package                   
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+---
+Finished <<< my_package [5.72s]
+
+Summary: 1 package finished [6.87s]
+  1 package had stderr output: my_package
+
+# Source the setup file
+dostonbek@dostonbek-virtual-machine:~/ros2_ws$ . install/local_setup.bash
+
+#Use the package
+dostonbek@dostonbek-virtual-machine:~/ros2_ws$ ros2 run my_package my_node
+Hi from my_package.
 
 ```
 
+# Writing a publisher and subscriber(Python)
+```bash
+#MAKE SURE YOU ARE IN THE src FOLDER AND ENTER THE COMMAND FOR CREATING THE PY_PACKAGE
+dostonbek@dostonbek-virtual-machine:~/ros2_ws/src$ ros2 pkg create --build-type ament_python py_pubsub
+going to create a new package
+package name: py_pubsub
+destination directory: /home/dostonbek/ros2_ws/src
+package format: 3
+version: 0.0.0
+description: TODO: Package description
+maintainer: ['dostonbek <zeripboyevdostonbek@gmail.com>']
+licenses: ['TODO: License declaration']
+build type: ament_python
+dependencies: []
+creating folder ./py_pubsub
+creating ./py_pubsub/package.xml
+creating source folder
+creating folder ./py_pubsub/py_pubsub
+creating ./py_pubsub/setup.py
+creating ./py_pubsub/setup.cfg
+creating folder ./py_pubsub/resource
+creating ./py_pubsub/resource/py_pubsub
+creating ./py_pubsub/py_pubsub/__init__.py
+creating folder ./py_pubsub/test
+creating ./py_pubsub/test/test_copyright.py
+creating ./py_pubsub/test/test_flake8.py
+creating ./py_pubsub/test/test_pep257.py
+.... 
+
+# Write the publisher node
+# Download the example talker code by entering the following command:
+dostonbek@dostonbek-virtual-machine:~/ros2_ws/src/py_pubsub/py_pubsub$ wget https://raw.githubusercontent.com/ros2/examples/humble/rclpy/topics/minimal_publisher/examples_rclpy_minimal_publisher/publisher_member_function.py
+--2022-10-12 22:48:59--  https://raw.githubusercontent.com/ros2/examples/humble/rclpy/topics/minimal_publisher/examples_rclpy_minimal_publisher/publisher_member_function.py
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.109.133, 185.199.108.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1576 (1.5K) [text/plain]
+Saving to: ‘publisher_member_function.py’
+
+publisher_member_fu 100%[===================>]   1.54K  --.-KB/s    in 0.001s  
+
+2022-10-12 22:48:59 (1.83 MB/s) - ‘publisher_member_function.py’ saved [1576/1576]
+
+# Write the subscriber node
+dostonbek@dostonbek-virtual-machine:~/ros2_ws/src/py_pubsub/py_pubsub$ wget https://raw.githubusercontent.com/ros2/examples/humble/rclpy/topics/minimal_subscriber/examples_rclpy_minimal_subscriber/subscriber_member_function.py
+--2022-10-12 22:57:25--  https://raw.githubusercontent.com/ros2/examples/humble/rclpy/topics/minimal_subscriber/examples_rclpy_minimal_subscriber/subscriber_member_function.py
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.108.133, 185.199.110.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1469 (1.4K) [text/plain]
+Saving to: ‘subscriber_member_function.py’
+
+subscriber_member_f 100%[===================>]   1.43K  --.-KB/s    in 0.001s  
+
+2022-10-12 22:57:26 (1.23 MB/s) - ‘subscriber_member_function.py’ saved [1469/1469]
+
+# Build and run
+dostonbek@dostonbek-virtual-machine:~/ros2_ws$ rosdep install -i --from-path src --rosdistro humble -y
+All required rosdeps installed successfully
+# Still in the root of your workspace, ros2_ws, build your new package:
+dostonbek@dostonbek-virtual-machine:~/ros2_ws$ colcon build --packages-select py_pubsub
+Starting >>> py_pubsub
+--- stderr: py_pubsub                   
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+---
+Finished <<< py_pubsub [5.65s]
+
+Summary: 1 package finished [6.78s]
+  1 package had stderr output: py_pubsub
+
+---------------------------------------
+# TESTING THE NODES
+---------------------------------------
+dostonbek@dostonbek-virtual-machine:~/ros2_ws$ . install/setup.bash
+dostonbek@dostonbek-virtual-machine:~/ros2_ws$ ros2 run py_pubsub talker
+[INFO] [1665583443.243800209] [minimal_publisher]: Publishing: "Hello World: 0"
+[INFO] [1665583443.548757210] [minimal_publisher]: Publishing: "Hello World: 1"
+[INFO] [1665583444.042925022] [minimal_publisher]: Publishing: "Hello World: 2"
+[INFO] [1665583444.544386055] [minimal_publisher]: Publishing: "Hello World: 3"
+[INFO] [1665583445.042098313] [minimal_publisher]: Publishing: "Hello World: 4"
+
+ ----------------------------------------------------------------------------
+ dostonbek@dostonbek-virtual-machine:~/ros2_ws$ . install/setup.bash
+dostonbek@dostonbek-virtual-machine:~/ros2_ws$ ros2 run py_pubsub listener
+[INFO] [1665583484.759161000] [minimal_subscriber]: I heard: "Hello World: 83"
+[INFO] [1665583485.055122321] [minimal_subscriber]: I heard: "Hello World: 84"
+[INFO] [1665583485.551994070] [minimal_subscriber]: I heard: "Hello World: 85"
+[INFO] [1665583486.052137461] [minimal_subscriber]: I heard: "Hello World: 86"
+ 
+```
+
+# Writing a simple service and client (Python)
+```bash
+# Create a package
+dostonbek@dostonbek-virtual-machine:~$ cd ros2_ws
+dostonbek@dostonbek-virtual-machine:~/ros2_ws$ cd src
+dostonbek@dostonbek-virtual-machine:~/ros2_ws/src$ ros2 pkg create --build-type ament_python py_srvcli --dependencies rclpy example_interfaces
+going to create a new package
+package name: py_srvcli
+destination directory: /home/dostonbek/ros2_ws/src
+package format: 3
+version: 0.0.0
+description: TODO: Package description
+maintainer: ['dostonbek <zeripboyevdostonbek@gmail.com>']
+licenses: ['TODO: License declaration']
+build type: ament_python
+dependencies: ['rclpy', 'example_interfaces']
+creating folder ./py_srvcli
+creating ./py_srvcli/package.xml
+creating source folder
+creating folder ./py_srvcli/py_srvcli
+creating ./py_srvcli/setup.py
+creating ./py_srvcli/setup.cfg
+creating folder ./py_srvcli/resource
+creating ./py_srvcli/resource/py_srvcli
+creating ./py_srvcli/py_srvcli/__init__.py
+creating folder ./py_srvcli/test
+creating ./py_srvcli/test/test_copyright.py
+creating ./py_srvcli/test/test_flake8.py
+creating ./py_srvcli/test/test_pep257.py
+
+
+# Write the service node inside the ros2_ws/src/py_srvcli/py_srvcli directory:
+------------------------------------------------------------------------------
+dostonbek@dostonbek-virtual-machine:~/ros2_ws/src/py_srvcli$ nano service_member_function.py
+dostonbek@dostonbek-virtual-machine:~/ros2_ws/src/py_srvcli$ nano client_member_function.py
+
+# Add an entry points into the setup.py to be able to run the servic&client nodes.
+----------------------------------------------------------------------------------
+dostonbek@dostonbek-virtual-machine:~/ros2_ws/src/py_srvcli$ nano setup.py
+ entry_points={
+        'console_scripts': ['service = py_srvcli.service_member_function:main',
+        'client = py_srvcli.client_member_function:main',
+        ],
+    },
+    
+ # BUILD AND RUN
+ dostonbek@dostonbek-virtual-machine:~/ros2_ws$ rosdep install -i --from-path src --rosdistro humble -y
+#All required rosdeps installed successfully
+dostonbek@dostonbek-virtual-machine:~/ros2_ws$ colcon build --packages-select py_srvcli
+Starting >>> py_srvcli
+--- stderr: py_srvcli                   
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+---
+Finished <<< py_srvcli [5.14s]
+
+Summary: 1 package finished [6.23s]
+  1 package had stderr output: py_srvcli
+
+# Open a new terminal, navigate to ros2_ws, and source the setup files
+----------------------------------------------------------------------
+dostonbek@dostonbek-virtual-machine:~$ cd ros2_ws
+dostonbek@dostonbek-virtual-machine:~/ros2_ws$ . install/setup.bash
+dostonbek@dostonbek-virtual-machine:~/ros2_ws$ ros2 run py_srvcli service
+[INFO] [1665587399.390394773] [minimal_service]: Incoming request
+a: 2 b: 3
+
+# Do the same thing for the client node
+dostonbek@dostonbek-virtual-machine:~/ros2_ws$ ros2 run py_srvcli client 2 3
+Package 'py_srvcli' not found
+dostonbek@dostonbek-virtual-machine:~/ros2_ws$ . install/setup.bash
+dostonbek@dostonbek-virtual-machine:~/ros2_ws$ ros2 run py_srvcli client 2 3
+[INFO] [1665587399.512228776] [minimal_client_async]: Result of add_two_ints: for 2 + 3 = 5
+
+```
