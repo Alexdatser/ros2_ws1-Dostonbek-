@@ -86,4 +86,7 @@ Use arrow keys to move the turtle.
 Use G|B|V|C|D|E|R|T keys to rotate to absolute orientations. 'F' to cancel a rotation.
 'Q' to quit.
 ```
+![Screenshot from 2022-10-12 19-20-46](https://user-images.githubusercontent.com/81208782/195318607-042bf0f5-5cae-4ff3-b92e-a91908675c1f.png)
+
+# TURTLE simulation
 
