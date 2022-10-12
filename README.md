@@ -54,3 +54,8 @@ Reading state information... Done
 dostonbek@dostonbek-virtual-machine:~$ rqt
 ```
 ![Screenshot from 2022-10-12 19-05-04](https://user-images.githubusercontent.com/81208782/195314607-a6f7c068-1cae-469c-af4c-232bd7b46e4c.png)
+
+# RQT: running rqt_console
+```bash
+dostonbek@dostonbek-virtual-machine:~$ ros2 run rqt_console rqt_console
+```
