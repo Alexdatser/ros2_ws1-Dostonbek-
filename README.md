@@ -59,3 +59,31 @@ dostonbek@dostonbek-virtual-machine:~$ rqt
 ```bash
 dostonbek@dostonbek-virtual-machine:~$ ros2 run rqt_console rqt_console
 ```
+
+![Screenshot from 2022-10-12 19-09-14](https://user-images.githubusercontent.com/81208782/195315734-03b518b0-29c3-4aa6-845b-7bc656ef08ab.png)
+
+### Turtlesim simulation
+```bash  
+# RUN THE TURTLESIM_NODE IN A NEW TAB
+dostonbek@dostonbek-virtual-machine:~$ ros2 run turtlesim turtlesim_node
+[INFO] [1665564036.889087992] [turtlesim]: Starting turtlesim with node name /turtlesim
+[INFO] [1665564036.927254550] [turtlesim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]
+# RUN THE TURTLE_TELEOP_KEY TO MOVE THE TURTLE IN A NEW TAB
+dostonbek@dostonbek-virtual-machine:~$ ros2 run turtlesim turtle_teleop_key
+Reading from keyboard
+---------------------------
+Use arrow keys to move the turtle.
+Use G|B|V|C|D|E|R|T keys to rotate to absolute orientations. 'F' to cancel a rotation.
+'Q' to quit.
+#RUN THE rqt in your terminal
+dostonbek@dostonbek-virtual-machine:~$ rqt
+#CHANGE THE /SPAWN SERVICE PARAMETERS TO RUN TURTLE2
+#TO RUN THE TURTLE TO RUN THIS COMMAND
+dostonbek@dostonbek-virtual-machine:~$ ros2 run turtlesim turtle_teleop_key --ros-args --remap turtle1/cmd_vel:=turtle2/cmd_vel
+Reading from keyboard
+---------------------------
+Use arrow keys to move the turtle.
+Use G|B|V|C|D|E|R|T keys to rotate to absolute orientations. 'F' to cancel a rotation.
+'Q' to quit.
+```
+
