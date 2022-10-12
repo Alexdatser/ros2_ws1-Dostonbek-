@@ -377,3 +377,12 @@ dostonbek@dostonbek-virtual-machine:~/ros2_ws$ ros2 run py_srvcli client 2 3
 [INFO] [1665587399.512228776] [minimal_client_async]: Result of add_two_ints: for 2 + 3 = 5
 
 ```
+# Writing an action server and client (Python)
+```bash
+#Writing an action server
+-------------------------
+dostonbek@dostonbek-virtual-machine:~$ nano fibonacci_action_server.py
+
+#You can get the action_server code from this link:
+---------------------------------------------------
+```
