@@ -89,4 +89,100 @@ Use G|B|V|C|D|E|R|T keys to rotate to absolute orientations. 'F' to cancel a rot
 ![Screenshot from 2022-10-12 19-20-46](https://user-images.githubusercontent.com/81208782/195318607-042bf0f5-5cae-4ff3-b92e-a91908675c1f.png)
 
 # TURTLE simulation
+[Screencast from 10-12-2022 07:26:28 PM.webm](https://user-images.githubusercontent.com/81208782/195319523-fb7dfc8c-0d0a-4a2f-aaad-b2da4afc42ac.webm)
+
+## ROS2 Colcon
+```bash 
+# INSTALLING Colcon
+dostonbek@dostonbek-virtual-machine:~$ sudo apt install python3-colcon-common-extensions
+[sudo] password for dostonbek: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+python3-colcon-common-extensions is already the newest version (0.3.0-1).
+The following package was automatically installed and is no longer required:
+  systemd-hwe-hwdb
+Use 'sudo apt autoremove' to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 31 not upgraded.
+
+-----------------------------------
+ # ROS2 Colcon: Create a workspace
+-----------------------------------
+# Source ROS 2 environment
+dostonbek@dostonbek-virtual-machine:~$ source /opt/ros/humble/setup.bash
+# Create a new directory
+dostonbek@dostonbek-virtual-machine:mkdir -p ~/ros2_ws/src cd ~/ros2_ws/src
+# Clone a sample repo
+dostonbek@dostonbek-virtual-machine:~/ros2_ws/src$ git clone https://github.com/ros/ros_tutorials.git -b humble-devel
+Cloning into 'ros_tutorials'...
+remote: Enumerating objects: 2841, done.
+remote: Counting objects: 100% (161/161), done.
+remote: Compressing objects: 100% (88/88), done.
+remote: Total 2841 (delta 93), reused 131 (delta 71), pack-reused 2680
+Receiving objects: 100% (2841/2841), 617.66 KiB | 3.06 MiB/s, done.
+Resolving deltas: 100% (1710/1710), done.
+# Resolve dependencies
+dostonbek@dostonbek-virtual-machine:~/ros2_ws/src$ # cd if you're still in the ``src`` directory with the ``ros_tutorials`` clone
+cd ..
+rosdep install -i --from-path src --rosdistro humble -y
+All required rosdeps installed successfully
+
+
+# BUILD THE WORKSPACE WITH Colcon
+ dostonbek@dostonbek-virtual-machine:~/ros2_ws$ colcon build
+[0.829s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'examples_rclpy_minimal_client' is in: /home/dostonbek/ros2_ws/install/examples_rclpy_minimal_client, /opt/ros/humble
+	'examples_rclpy_minimal_service' is in: /home/dostonbek/ros2_ws/install/examples_rclpy_minimal_service, /opt/ros/humble
+Finished <<< launch_testing_examples [4.63s]
+Starting >>> turtlesim
+--- stderr: my_package                                      
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+---
+Finished <<< my_package [3.06s]
+[Processing: turtlesim]                               
+[Processing: turtlesim]                                        
+[Processing: turtlesim]                                         
+[Processing: turtlesim]                                         
+Finished <<< turtlesim [2min 27s]                                
+                             
+Summary: 24 packages finished [2min 53s]
+
+
+# Source the overlay
+dostonbek@dostonbek-virtual-machine:~/ros2_ws$ source /opt/ros/humble/setup.bash
+dostonbek@dostonbek-virtual-machine:~/ros2_ws$ cd ~/ros2_ws
+dostonbek@dostonbek-virtual-machine:~/ros2_ws$ . install/local_setup.bash
+
+# Modify the overlay
+You can modify turtlesim in your overlay by editing the title bar on the turtlesim window. To do this, locate the turtle_frame.cpp file in ~/ros2_ws/src/ros_tutorials/turtlesim/src. Open turtle_frame.cpp with your preferred text editor.
+
+On line 52 you will see the function setWindowTitle("TurtleSim");. Change the value ”TurtleSim” to ”MyTurtleSim”, and save the file.
+```cpp
+  setFixedSize(500, 500);
+  setWindowTitle("MyTurtleSim");
+
+  srand(time(NULL));
+
+```
+- Return to first terminal where you ran colcon build earlier and run it again.
+dostonbek@dostonbek-virtual-machine:~/ros2_ws$ colcon build
+Finished <<< launch_testing_examples [12.3s]
+Starting >>> turtlesim
+--- stderr: my_package                                           
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+---
+Finished <<< my_package [7.72s]
+[Processing: turtlesim]                                    
+[Processing: turtlesim]                                        
+[Processing: turtlesim]                                          
+Finished <<< turtlesim [1min 33s]                             
+
+Summary: 24 packages finished [3min 18s]
+
+
+
+
+```
 
