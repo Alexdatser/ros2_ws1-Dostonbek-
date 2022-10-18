@@ -385,5 +385,55 @@ dostonbek@dostonbek-virtual-machine:~$ nano fibonacci_action_server.py
 
 #You can get the action_server code from this link:
 ---------------------------------------------------
-get_url. read(fibonacci_action_server.py)
+Please put your url here....
+
+#Run the action server
+dostonbek@dostonbek-virtual-machine:~$ python3 fibonacci_action_server.py
+[INFO] [1666080134.186330443] [fibonacci_action_server]: Executing goal...
+[WARN] [1666080134.193446718] [fibonacci_action_server]: Goal state not set, assuming aborted. Goal ID: [ 18 134 138 112 226  80  66 106 156 220 248  73   7 117  23 184]
+
+#In another terminal, use the command line interface to send a goal:
+--------------------------------------------------------------------
+dostonbek@dostonbek-virtual-machine:~/ros2_ws$ ros2 action send_goal fibonacci action_tutorials_interfaces/action/Fibonacci "{order: 5}"
+Waiting for an action server to become available...
+Sending goal:
+     order: 5
+
+Goal accepted with ID: ec7404b4eec045359689b7ce0ba0114c
+
+Result:
+    sequence:
+- 0
+- 1
+- 1
+- 2
+- 3
+- 5
+
+Goal finished with status: SUCCEEDED
+
+# Writing a action_client server
+--------------------------------------------------
+#You can get the action_client code from this link:
+ drop the link here.....
+
+#Run the action client
+--------------------------------------------------
+dostonbek@dostonbek-virtual-machine:~$ python3 fibonacci_action_client.py
+[INFO] [1666082856.061111708] [fibonacci_action_client]: Goal accepted :)
+[INFO] [1666082856.068037337] [fibonacci_action_client]: Received feedback: array('i', [0, 1, 1])
+[INFO] [1666082856.756565035] [fibonacci_action_client]: Received feedback: array('i', [0, 1, 1, 2])
+[INFO] [1666082857.789359642] [fibonacci_action_client]: Received feedback: array('i', [0, 1, 1, 2, 3])
+[INFO] [1666082858.811116481] [fibonacci_action_client]: Received feedback: array('i', [0, 1, 1, 2, 3, 5])
+.... 
+#In another terminal, run the action_server:
+--------------------------------------------------------------------
+dostonbek@dostonbek-virtual-machine:~$ python3 fibonacci_action_server.py
+[INFO] [1666083124.354223601] [fibonacci_action_server]: Executing goal...
+[INFO] [1666083124.359767413] [fibonacci_action_server]: Feedback: array('i', [0, 1, 1])
+[INFO] [1666083125.381763139] [fibonacci_action_server]: Feedback: array('i', [0, 1, 1, 2])
+[INFO] [1666083126.402751105] [fibonacci_action_server]: Feedback: array('i', [0, 1, 1, 2, 3])
+[INFO] [1666083127.420273445] [fibonacci_action_server]: Feedback: array('i', [0, 1, 1, 2, 3, 5])
+....
 ```
+#Composing multiple nodes in a single process
