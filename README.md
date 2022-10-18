@@ -385,7 +385,7 @@ dostonbek@dostonbek-virtual-machine:~$ nano fibonacci_action_server.py
 
 #You can get the action_server code from this link:
 ---------------------------------------------------
-Please put your url here....
+(https://github.com/Alexdatser/ros2_ws1-Dostonbek-/blob/main/fibonacci_action_server.py)
 
 #Run the action server
 dostonbek@dostonbek-virtual-machine:~$ python3 fibonacci_action_server.py
@@ -415,7 +415,8 @@ Goal finished with status: SUCCEEDED
 # Writing a action_client server
 --------------------------------------------------
 #You can get the action_client code from this link:
- drop the link here.....
+ (https://github.com/Alexdatser/ros2_ws1-Dostonbek-/blob/main/fibonacci_action_client.py
+)
 
 #Run the action client
 --------------------------------------------------
