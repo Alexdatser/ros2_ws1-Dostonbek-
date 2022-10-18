@@ -438,3 +438,110 @@ dostonbek@dostonbek-virtual-machine:~$ python3 fibonacci_action_server.py
 ....
 ```
 #Composing multiple nodes in a single process
+
+```bash
+#Discover available components
+--------------------------------------------------------------
+dostonbek@dostonbek-virtual-machine:~$ ros2 component types
+demo_nodes_cpp_native
+  demo_nodes_cpp_native::Talker
+tf2_ros
+  tf2_ros::StaticTransformBroadcasterNode
+examples_rclcpp_minimal_subscriber
+  WaitSetSubscriber
+  StaticWaitSetSubscriber
+  TimeTriggeredWaitSetSubscriber
+teleop_twist_joy
+  teleop_twist_joy::TeleopTwistJoy
+composition
+  composition::Talker
+  composition::Listener
+  composition::NodeLikeListener
+  composition::Server
+  composition::Client
+action_tutorials_cpp
+  action_tutorials_cpp::FibonacciActionClient
+  action_tutorials_cpp::FibonacciActionServer
+....
+```
+##Run-time composition using ROS services with a publisher and subscriber
+```bash
+#In the first shell, start the component container:
+---------------------------------------------------
+dostonbek@dostonbek-virtual-machine:~$ ros2 run rclcpp_components component_container
+
+#Open the second shell, start the component container:
+------------------------------------------------------
+dostonbek@dostonbek-virtual-machine:~$ ros2 component list
+/ComponentManager
+#Load the talker component(2nd shell)
+dostonbek@dostonbek-virtual-machine:~$ ros2 component load /ComponentManager composition composition::Talker
+Loaded component 1 into '/ComponentManager' container node as '/talker'
+dostonbek@dostonbek-virtual-machine:~$ ros2 component load /ComponentManager composition composition::Listener
+Loaded component 2 into '/ComponentManager' container node as '/listener'
+
+#Now the first shell should show a message that the component was loaded as well as repeated message for publishing a message
+-------------------------------------------------------------------------
+dostonbek@dostonbek-virtual-machine:~$ ros2 run rclcpp_components component_container
+[INFO] [1666084550.743606889] [ComponentManager]: Load Library: /opt/ros/humble/lib/libtalker_component.so
+[INFO] [1666084550.773250331] [ComponentManager]: Found class: rclcpp_components::NodeFactoryTemplate<composition::Talker>
+[INFO] [1666084550.774314876] [ComponentManager]: Instantiate class: rclcpp_components::NodeFactoryTemplate<composition::Talker>
+[INFO] [1666084551.932823947] [talker]: Publishing: 'Hello World: 1'
+[INFO] [1666084552.933197392] [talker]: Publishing: 'Hello World: 2'
+[INFO] [1666084553.932086179] [talker]: Publishing: 'Hello World: 3'
+[INFO] [1666084554.935873372] [talker]: Publishing: 'Hello World: 4'
+[INFO] [1666084555.932529068] [talker]: Publishing: 'Hello World: 5'
+...
+
+#Run another command in the second shell to load the listener component
+-----------------------------------------------------------------------
+
+dostonbek@dostonbek-virtual-machine:~$ ros2 component load /ComponentManager composition composition::Listener
+Loaded component 2 into '/ComponentManager' container node as '/listener'
+
+#Now the first shell should show repeated output for each received message
+---------------------------------------------------------------------------
+
+[INFO] [1666085023.740376414] [ComponentManager]: Load Library: /opt/ros/humble/lib/liblistener_component.so
+[INFO] [1666085023.755588273] [ComponentManager]: Found class: rclcpp_components::NodeFactoryTemplate<composition::Listener>
+[INFO] [1666085023.759297033] [ComponentManager]: Instantiate class: rclcpp_components::NodeFactoryTemplate<composition::Listener>
+[INFO] [1666085024.021621308] [talker]: Publishing: 'Hello World: 63'
+[INFO] [1666085024.028020585] [listener]: I heard: [Hello World: 63]
+[INFO] [1666085024.856956518] [talker]: Publishing: 'Hello World: 64'
+[INFO] [1666085024.857506042] [listener]: I heard: [Hello World: 64]
+[INFO] [1666085025.856397342] [talker]: Publishing: 'Hello World: 65'
+[INFO] [1666085025.857027370] [listener]: I heard: [Hello World: 65]
+...
+
+```
+
+#Creating a launch file
+
+```bash
+#Create a new directory to store launch files and write the launch file
+---------------------------------------------------------------------
+dostonbek@dostonbek-virtual-machine:~$ mkdir launch
+dostonbek@dostonbek-virtual-machine:~$ cd launch
+dostonbek@dostonbek-virtual-machine:~/launch$ nano turtlesim_mimic_launch.py
+
+#Run the launch file created above
+----------------------------------
+dostonbek@dostonbek-virtual-machine:~/launch$ ros2 launch turtlesim_mimic_launch.py
+[INFO] [launch]: All log files can be found below /home/dostonbek/.ros/log/2022-10-19-04-37-43-890120-dostonbek-virtual-machine-14075
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [turtlesim_node-1]: process started with pid [14076]
+[INFO] [turtlesim_node-2]: process started with pid [14078]
+[INFO] [mimic-3]: process started with pid [14080]
+[turtlesim_node-2] Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+[turtlesim_node-1] Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+[turtlesim_node-2] [INFO] [1666121865.745122219] [turtlesim2.sim]: Starting turtlesim with node name /turtlesim2/sim
+[turtlesim_node-2] [INFO] [1666121865.820711557] [turtlesim2.sim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]
+
+
+
+```
+#Introspect the sytem with rqt_graph
+```bash
+dostonbek@dostonbek-virtual-machine:~/launch$ rqt_graph
+
+```
