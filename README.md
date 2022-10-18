@@ -537,11 +537,22 @@ dostonbek@dostonbek-virtual-machine:~/launch$ ros2 launch turtlesim_mimic_launch
 [turtlesim_node-2] [INFO] [1666121865.745122219] [turtlesim2.sim]: Starting turtlesim with node name /turtlesim2/sim
 [turtlesim_node-2] [INFO] [1666121865.820711557] [turtlesim2.sim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]
 
+```
 
+![image](https://user-images.githubusercontent.com/81208782/196530996-7cbf2f04-e39c-411f-b5e7-b444f11415fa.png)
+
+#To see the system in action, open a new terminal and run the commands below
+```bash
+dostonbek@dostonbek-virtual-machine:~/launch$ ros2 topic pub -r 1 /turtlesim1/turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: -1.8}}"
 
 ```
+[Screencast from 10-19-2022 04:49:45 AM.webm](https://user-images.githubusercontent.com/81208782/196531313-bfef226a-674f-42a8-a57d-9271c5ace63c.webm)
+
+
+
 #Introspect the sytem with rqt_graph
 ```bash
 dostonbek@dostonbek-virtual-machine:~/launch$ rqt_graph
 
 ```
+![image](https://user-images.githubusercontent.com/81208782/196531182-141708ff-4574-46f4-9579-50317acb188d.png)
