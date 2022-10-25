@@ -1,0 +1,58 @@
+[1.546s] Invoking command in '/home/dostonbek/ros2_ws/build/launch_testing_examples': PYTHONPATH=/home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/dostonbek/ros2_ws/install/launch_testing_examples --uninstall --editable --build-directory /home/dostonbek/ros2_ws/build/launch_testing_examples/build
+[2.260s] running develop
+[2.260s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.261s]   warnings.warn(
+[2.263s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.264s]   warnings.warn(
+[2.399s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[2.399s]   warnings.warn(
+[2.400s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[2.400s]   warnings.warn(
+[2.598s] Removing /home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages/launch-testing-examples.egg-link (link to .)
+[2.646s] Invoked command in '/home/dostonbek/ros2_ws/build/launch_testing_examples' returned '0': PYTHONPATH=/home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/dostonbek/ros2_ws/install/launch_testing_examples --uninstall --editable --build-directory /home/dostonbek/ros2_ws/build/launch_testing_examples/build
+[2.647s] Invoking command in '/home/dostonbek/ros2_ws/src/examples/launch_testing/launch_testing_examples': PYTHONPATH=/home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/launch_testing_examples build --build-base /home/dostonbek/ros2_ws/build/launch_testing_examples/build install --prefix /home/dostonbek/ros2_ws/install/launch_testing_examples --record /home/dostonbek/ros2_ws/build/launch_testing_examples/install.log --single-version-externally-managed
+[3.201s] running egg_info
+[3.202s] writing ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/PKG-INFO
+[3.203s] writing dependency_links to ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/dependency_links.txt
+[3.203s] writing entry points to ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/entry_points.txt
+[3.204s] writing requirements to ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/requires.txt
+[3.204s] writing top-level names to ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/top_level.txt
+[3.208s] reading manifest file '../../../../build/launch_testing_examples/launch_testing_examples.egg-info/SOURCES.txt'
+[3.209s] writing manifest file '../../../../build/launch_testing_examples/launch_testing_examples.egg-info/SOURCES.txt'
+[3.210s] running build
+[3.210s] running build_py
+[3.211s] creating /home/dostonbek/ros2_ws/build/launch_testing_examples/build
+[3.211s] creating /home/dostonbek/ros2_ws/build/launch_testing_examples/build/lib
+[3.211s] creating /home/dostonbek/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples
+[3.212s] copying launch_testing_examples/record_rosbag_launch_test.py -> /home/dostonbek/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples
+[3.212s] copying launch_testing_examples/hello_world_launch_test.py -> /home/dostonbek/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples
+[3.212s] copying launch_testing_examples/set_param_launch_test.py -> /home/dostonbek/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples
+[3.212s] copying launch_testing_examples/check_multiple_nodes_launch_test.py -> /home/dostonbek/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples
+[3.213s] copying launch_testing_examples/check_node_launch_test.py -> /home/dostonbek/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples
+[3.213s] copying launch_testing_examples/check_msgs_launch_test.py -> /home/dostonbek/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples
+[3.213s] copying launch_testing_examples/__init__.py -> /home/dostonbek/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples
+[3.214s] running install
+[3.214s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.214s]   warnings.warn(
+[3.215s] running install_lib
+[3.216s] creating /home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages/launch_testing_examples
+[3.216s] copying /home/dostonbek/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples/record_rosbag_launch_test.py -> /home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages/launch_testing_examples
+[3.216s] copying /home/dostonbek/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples/hello_world_launch_test.py -> /home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages/launch_testing_examples
+[3.217s] copying /home/dostonbek/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples/set_param_launch_test.py -> /home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages/launch_testing_examples
+[3.217s] copying /home/dostonbek/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples/check_multiple_nodes_launch_test.py -> /home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages/launch_testing_examples
+[3.218s] copying /home/dostonbek/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples/check_node_launch_test.py -> /home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages/launch_testing_examples
+[3.218s] copying /home/dostonbek/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples/check_msgs_launch_test.py -> /home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages/launch_testing_examples
+[3.218s] copying /home/dostonbek/ros2_ws/build/launch_testing_examples/build/lib/launch_testing_examples/__init__.py -> /home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages/launch_testing_examples
+[3.219s] byte-compiling /home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages/launch_testing_examples/record_rosbag_launch_test.py to record_rosbag_launch_test.cpython-310.pyc
+[3.220s] byte-compiling /home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages/launch_testing_examples/hello_world_launch_test.py to hello_world_launch_test.cpython-310.pyc
+[3.221s] byte-compiling /home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages/launch_testing_examples/set_param_launch_test.py to set_param_launch_test.cpython-310.pyc
+[3.222s] byte-compiling /home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages/launch_testing_examples/check_multiple_nodes_launch_test.py to check_multiple_nodes_launch_test.cpython-310.pyc
+[3.224s] byte-compiling /home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages/launch_testing_examples/check_node_launch_test.py to check_node_launch_test.cpython-310.pyc
+[3.224s] byte-compiling /home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages/launch_testing_examples/check_msgs_launch_test.py to check_msgs_launch_test.cpython-310.pyc
+[3.225s] byte-compiling /home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages/launch_testing_examples/__init__.py to __init__.cpython-310.pyc
+[3.225s] running install_data
+[3.226s] running install_egg_info
+[3.231s] Copying ../../../../build/launch_testing_examples/launch_testing_examples.egg-info to /home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages/launch_testing_examples-0.15.0-py3.10.egg-info
+[3.232s] running install_scripts
+[3.273s] writing list of installed files to '/home/dostonbek/ros2_ws/build/launch_testing_examples/install.log'
+[3.313s] Invoked command in '/home/dostonbek/ros2_ws/src/examples/launch_testing/launch_testing_examples' returned '0': PYTHONPATH=/home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/launch_testing_examples build --build-base /home/dostonbek/ros2_ws/build/launch_testing_examples/build install --prefix /home/dostonbek/ros2_ws/install/launch_testing_examples --record /home/dostonbek/ros2_ws/build/launch_testing_examples/install.log --single-version-externally-managed

@@ -1,0 +1,33 @@
+[5.678s] Invoking command in '/home/dostonbek/ros2_ws/build/launch_testing_examples': PYTHONPATH=/home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/dostonbek/ros2_ws/install/launch_testing_examples --uninstall --editable --build-directory /home/dostonbek/ros2_ws/build/launch_testing_examples/build
+[8.529s] running develop
+[8.543s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[8.543s]   warnings.warn(
+[8.551s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[8.551s]   warnings.warn(
+[9.343s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[9.343s]   warnings.warn(
+[9.365s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[9.365s]   warnings.warn(
+[11.017s] Invoked command in '/home/dostonbek/ros2_ws/build/launch_testing_examples' returned '0': PYTHONPATH=/home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/dostonbek/ros2_ws/install/launch_testing_examples --uninstall --editable --build-directory /home/dostonbek/ros2_ws/build/launch_testing_examples/build
+[11.026s] Invoking command in '/home/dostonbek/ros2_ws/src/examples/launch_testing/launch_testing_examples': PYTHONPATH=/home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/launch_testing_examples build --build-base /home/dostonbek/ros2_ws/build/launch_testing_examples/build install --prefix /home/dostonbek/ros2_ws/install/launch_testing_examples --record /home/dostonbek/ros2_ws/build/launch_testing_examples/install.log --single-version-externally-managed
+[14.455s] running egg_info
+[14.465s] writing ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/PKG-INFO
+[14.466s] writing dependency_links to ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/dependency_links.txt
+[14.478s] writing entry points to ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/entry_points.txt
+[14.479s] writing requirements to ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/requires.txt
+[14.479s] writing top-level names to ../../../../build/launch_testing_examples/launch_testing_examples.egg-info/top_level.txt
+[14.502s] reading manifest file '../../../../build/launch_testing_examples/launch_testing_examples.egg-info/SOURCES.txt'
+[14.517s] writing manifest file '../../../../build/launch_testing_examples/launch_testing_examples.egg-info/SOURCES.txt'
+[14.518s] running build
+[14.519s] running build_py
+[14.521s] running install
+[14.529s] running install_lib
+[14.530s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[14.530s]   warnings.warn(
+[14.543s] running install_data
+[14.554s] running install_egg_info
+[14.564s] removing '/home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages/launch_testing_examples-0.15.0-py3.10.egg-info' (and everything under it)
+[14.565s] Copying ../../../../build/launch_testing_examples/launch_testing_examples.egg-info to /home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages/launch_testing_examples-0.15.0-py3.10.egg-info
+[14.591s] running install_scripts
+[14.834s] writing list of installed files to '/home/dostonbek/ros2_ws/build/launch_testing_examples/install.log'
+[15.082s] Invoked command in '/home/dostonbek/ros2_ws/src/examples/launch_testing/launch_testing_examples' returned '0': PYTHONPATH=/home/dostonbek/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/launch_testing_examples build --build-base /home/dostonbek/ros2_ws/build/launch_testing_examples/build install --prefix /home/dostonbek/ros2_ws/install/launch_testing_examples --record /home/dostonbek/ros2_ws/build/launch_testing_examples/install.log --single-version-externally-managed

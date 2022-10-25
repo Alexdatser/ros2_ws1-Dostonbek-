@@ -1,0 +1,46 @@
+[0.048s] Invoking command in '/home/dostonbek/ros2_ws/build/examples_rclcpp_wait_set': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dostonbek/ros2_ws/build/examples_rclcpp_wait_set -- -j2 -l2
+[0.512s] [  8%] Built target talker
+[0.549s] [ 16%] Built target wait_set_talker
+[0.613s] [ 25%] Built target listener
+[0.723s] [ 33%] Built target wait_set_listener
+[0.843s] [ 41%] Built target wait_set
+[0.913s] [ 50%] Built target static_wait_set
+[0.986s] [ 58%] Built target wait_set_topics_and_timer
+[1.043s] [ 66%] Built target thread_safe_wait_set
+[1.079s] [ 75%] Built target wait_set_random_order
+[1.154s] [ 83%] Built target executor_random_order
+[1.166s] [ 91%] Built target wait_set_topics_with_different_rates
+[1.219s] [100%] Built target wait_set_composed
+[1.359s] Invoked command in '/home/dostonbek/ros2_ws/build/examples_rclcpp_wait_set' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dostonbek/ros2_ws/build/examples_rclcpp_wait_set -- -j2 -l2
+[1.614s] Invoking command in '/home/dostonbek/ros2_ws/build/examples_rclcpp_wait_set': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dostonbek/ros2_ws/build/examples_rclcpp_wait_set
+[1.637s] -- Install configuration: ""
+[1.641s] -- Execute custom install script
+[1.644s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_talker
+[1.645s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_listener
+[1.647s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/lib/libtalker.so
+[1.648s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/lib/liblistener.so
+[1.651s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set
+[1.653s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/static_wait_set
+[1.654s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/thread_safe_wait_set
+[1.655s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_topics_and_timer
+[1.656s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_random_order
+[1.658s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/executor_random_order
+[1.659s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_topics_with_different_rates
+[1.660s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_composed
+[1.662s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_wait_set
+[1.664s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_wait_set
+[1.667s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/environment/ament_prefix_path.sh
+[1.668s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/environment/ament_prefix_path.dsv
+[1.669s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/environment/path.sh
+[1.670s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/environment/path.dsv
+[1.671s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/local_setup.bash
+[1.672s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/local_setup.sh
+[1.673s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/local_setup.zsh
+[1.674s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/local_setup.dsv
+[1.674s] -- Symlinking: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/package.dsv
+[1.700s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/share/ament_index/resource_index/packages/examples_rclcpp_wait_set
+[1.700s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/share/ament_index/resource_index/rclcpp_components/examples_rclcpp_wait_set
+[1.701s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/cmake/examples_rclcpp_wait_setConfig.cmake
+[1.702s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/cmake/examples_rclcpp_wait_setConfig-version.cmake
+[1.703s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/package.xml
+[1.709s] Invoked command in '/home/dostonbek/ros2_ws/build/examples_rclcpp_wait_set' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dostonbek/ros2_ws/build/examples_rclcpp_wait_set

@@ -1,0 +1,25 @@
+[0.024s] Invoking command in '/home/dostonbek/ros2_ws/build/examples_rclcpp_minimal_action_server': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dostonbek/ros2_ws/build/examples_rclcpp_minimal_action_server -- -j2 -l2
+[0.224s] [ 50%] Built target action_server_member_functions
+[0.238s] [100%] Built target action_server_not_composable
+[0.263s] Invoked command in '/home/dostonbek/ros2_ws/build/examples_rclcpp_minimal_action_server' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dostonbek/ros2_ws/build/examples_rclcpp_minimal_action_server -- -j2 -l2
+[0.403s] Invoking command in '/home/dostonbek/ros2_ws/build/examples_rclcpp_minimal_action_server': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dostonbek/ros2_ws/build/examples_rclcpp_minimal_action_server
+[0.420s] -- Install configuration: ""
+[0.422s] -- Execute custom install script
+[0.426s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_action_server/lib/examples_rclcpp_minimal_action_server/action_server_not_composable
+[0.427s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_action_server/lib/examples_rclcpp_minimal_action_server/action_server_member_functions
+[0.431s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_action_server/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_minimal_action_server
+[0.433s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_action_server/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_minimal_action_server
+[0.435s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_action_server/share/examples_rclcpp_minimal_action_server/environment/ament_prefix_path.sh
+[0.436s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_action_server/share/examples_rclcpp_minimal_action_server/environment/ament_prefix_path.dsv
+[0.437s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_action_server/share/examples_rclcpp_minimal_action_server/environment/path.sh
+[0.438s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_action_server/share/examples_rclcpp_minimal_action_server/environment/path.dsv
+[0.439s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_action_server/share/examples_rclcpp_minimal_action_server/local_setup.bash
+[0.440s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_action_server/share/examples_rclcpp_minimal_action_server/local_setup.sh
+[0.441s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_action_server/share/examples_rclcpp_minimal_action_server/local_setup.zsh
+[0.442s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_action_server/share/examples_rclcpp_minimal_action_server/local_setup.dsv
+[0.443s] -- Symlinking: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_action_server/share/examples_rclcpp_minimal_action_server/package.dsv
+[0.465s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_action_server/share/ament_index/resource_index/packages/examples_rclcpp_minimal_action_server
+[0.466s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_action_server/share/examples_rclcpp_minimal_action_server/cmake/examples_rclcpp_minimal_action_serverConfig.cmake
+[0.467s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_action_server/share/examples_rclcpp_minimal_action_server/cmake/examples_rclcpp_minimal_action_serverConfig-version.cmake
+[0.468s] -- Up-to-date symlink: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_action_server/share/examples_rclcpp_minimal_action_server/package.xml
+[0.471s] Invoked command in '/home/dostonbek/ros2_ws/build/examples_rclcpp_minimal_action_server' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dostonbek/ros2_ws/build/examples_rclcpp_minimal_action_server

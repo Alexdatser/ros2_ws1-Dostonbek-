@@ -1,0 +1,38 @@
+[6.022s] Invoking command in '/home/dostonbek/ros2_ws/build/examples_rclpy_minimal_action_server': PYTHONPATH=/home/dostonbek/ros2_ws/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/dostonbek/ros2_ws/install/examples_rclpy_minimal_action_server --uninstall --editable --build-directory /home/dostonbek/ros2_ws/build/examples_rclpy_minimal_action_server/build
+[7.910s] running develop
+[7.914s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[7.916s]   warnings.warn(
+[7.923s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[7.924s]   warnings.warn(
+[8.394s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[8.401s]   warnings.warn(
+[8.413s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[8.415s]   warnings.warn(
+[9.484s] Invoked command in '/home/dostonbek/ros2_ws/build/examples_rclpy_minimal_action_server' returned '0': PYTHONPATH=/home/dostonbek/ros2_ws/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/dostonbek/ros2_ws/install/examples_rclpy_minimal_action_server --uninstall --editable --build-directory /home/dostonbek/ros2_ws/build/examples_rclpy_minimal_action_server/build
+[9.486s] Invoking command in '/home/dostonbek/ros2_ws/src/examples/rclpy/actions/minimal_action_server': PYTHONPATH=/home/dostonbek/ros2_ws/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_action_server build --build-base /home/dostonbek/ros2_ws/build/examples_rclpy_minimal_action_server/build install --prefix /home/dostonbek/ros2_ws/install/examples_rclpy_minimal_action_server --record /home/dostonbek/ros2_ws/build/examples_rclpy_minimal_action_server/install.log --single-version-externally-managed
+[11.183s] running egg_info
+[11.186s] writing ../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info/PKG-INFO
+[11.188s] writing dependency_links to ../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info/dependency_links.txt
+[11.189s] writing entry points to ../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info/entry_points.txt
+[11.190s] writing requirements to ../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info/requires.txt
+[11.192s] writing top-level names to ../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info/top_level.txt
+[11.200s] reading manifest file '../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info/SOURCES.txt'
+[11.205s] writing manifest file '../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info/SOURCES.txt'
+[11.206s] running build
+[11.206s] running build_py
+[11.209s] running install
+[11.211s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[11.211s]   warnings.warn(
+[11.212s] running install_lib
+[11.220s] running install_data
+[11.222s] running install_egg_info
+[11.230s] removing '/home/dostonbek/ros2_ws/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages/examples_rclpy_minimal_action_server-0.15.0-py3.10.egg-info' (and everything under it)
+[11.232s] Copying ../../../../../build/examples_rclpy_minimal_action_server/examples_rclpy_minimal_action_server.egg-info to /home/dostonbek/ros2_ws/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages/examples_rclpy_minimal_action_server-0.15.0-py3.10.egg-info
+[11.238s] running install_scripts
+[11.348s] Installing server script to /home/dostonbek/ros2_ws/install/examples_rclpy_minimal_action_server/lib/examples_rclpy_minimal_action_server
+[11.349s] Installing server_defer script to /home/dostonbek/ros2_ws/install/examples_rclpy_minimal_action_server/lib/examples_rclpy_minimal_action_server
+[11.350s] Installing server_not_composable script to /home/dostonbek/ros2_ws/install/examples_rclpy_minimal_action_server/lib/examples_rclpy_minimal_action_server
+[11.352s] Installing server_queue_goals script to /home/dostonbek/ros2_ws/install/examples_rclpy_minimal_action_server/lib/examples_rclpy_minimal_action_server
+[11.353s] Installing server_single_goal script to /home/dostonbek/ros2_ws/install/examples_rclpy_minimal_action_server/lib/examples_rclpy_minimal_action_server
+[11.359s] writing list of installed files to '/home/dostonbek/ros2_ws/build/examples_rclpy_minimal_action_server/install.log'
+[11.441s] Invoked command in '/home/dostonbek/ros2_ws/src/examples/rclpy/actions/minimal_action_server' returned '0': PYTHONPATH=/home/dostonbek/ros2_ws/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_action_server build --build-base /home/dostonbek/ros2_ws/build/examples_rclpy_minimal_action_server/build install --prefix /home/dostonbek/ros2_ws/install/examples_rclpy_minimal_action_server --record /home/dostonbek/ros2_ws/build/examples_rclpy_minimal_action_server/install.log --single-version-externally-managed

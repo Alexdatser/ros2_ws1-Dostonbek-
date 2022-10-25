@@ -1,0 +1,68 @@
+[0.046s] Invoking command in '/home/dostonbek/ros2_ws/build/examples_rclcpp_minimal_client': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/dostonbek/ros2_ws/src/examples/rclcpp/services/minimal_client -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_client
+[0.246s] -- The C compiler identification is GNU 11.2.0
+[0.409s] -- The CXX compiler identification is GNU 11.2.0
+[0.438s] -- Detecting C compiler ABI info
+[0.653s] -- Detecting C compiler ABI info - done
+[0.671s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.671s] -- Detecting C compile features
+[0.672s] -- Detecting C compile features - done
+[0.678s] -- Detecting CXX compiler ABI info
+[0.894s] -- Detecting CXX compiler ABI info - done
+[0.903s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.904s] -- Detecting CXX compile features
+[0.905s] -- Detecting CXX compile features - done
+[0.908s] -- Found ament_cmake: 1.3.2 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.231s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[1.376s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.442s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[1.532s] -- Found rosidl_generator_c: 3.1.3 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.550s] -- Found rosidl_adapter: 3.1.3 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.564s] -- Found rosidl_generator_cpp: 3.1.3 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.586s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.620s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.048s] -- Found rclcpp: 16.0.1 (/opt/ros/humble/share/rclcpp/cmake)
+[2.205s] -- Found rmw_implementation_cmake: 6.1.0 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.211s] -- Found rmw_fastrtps_cpp: 6.2.1 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.502s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.569s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.691s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.186s] -- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.390s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.391s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.392s] -- Configured cppcheck include dirs: 
+[3.392s] -- Configured cppcheck exclude dirs and/or files: 
+[3.393s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.393s] -- Configured cpplint exclude dirs and/or files: 
+[3.395s] -- Added test 'lint_cmake' to check CMake code style
+[3.396s] -- Added test 'uncrustify' to check C / C++ code style
+[3.396s] -- Configured uncrustify additional arguments: 
+[3.398s] -- Added test 'xmllint' to check XML markup files
+[3.402s] -- Configuring done
+[3.427s] -- Generating done
+[3.433s] -- Build files have been written to: /home/dostonbek/ros2_ws/build/examples_rclcpp_minimal_client
+[3.467s] Invoked command in '/home/dostonbek/ros2_ws/build/examples_rclcpp_minimal_client' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/dostonbek/ros2_ws/src/examples/rclcpp/services/minimal_client -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_client
+[3.470s] Invoking command in '/home/dostonbek/ros2_ws/build/examples_rclcpp_minimal_client': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dostonbek/ros2_ws/build/examples_rclcpp_minimal_client -- -j2 -l2
+[3.620s] [ 50%] [32mBuilding CXX object CMakeFiles/client_main.dir/main.cpp.o[0m
+[12.315s] [100%] [32m[1mLinking CXX executable client_main[0m
+[12.773s] [100%] Built target client_main
+[12.799s] Invoked command in '/home/dostonbek/ros2_ws/build/examples_rclcpp_minimal_client' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dostonbek/ros2_ws/build/examples_rclcpp_minimal_client -- -j2 -l2
+[12.912s] Invoking command in '/home/dostonbek/ros2_ws/build/examples_rclcpp_minimal_client': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dostonbek/ros2_ws/build/examples_rclcpp_minimal_client
+[12.935s] -- Install configuration: ""
+[12.937s] -- Execute custom install script
+[12.938s] -- Symlinking: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_client/lib/examples_rclcpp_minimal_client/client_main
+[12.972s] -- Symlinking: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_client/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_minimal_client
+[12.999s] -- Symlinking: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_client/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_minimal_client
+[13.017s] -- Symlinking: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_client/share/examples_rclcpp_minimal_client/environment/ament_prefix_path.sh
+[13.036s] -- Symlinking: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_client/share/examples_rclcpp_minimal_client/environment/ament_prefix_path.dsv
+[13.055s] -- Symlinking: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_client/share/examples_rclcpp_minimal_client/environment/path.sh
+[13.081s] -- Symlinking: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_client/share/examples_rclcpp_minimal_client/environment/path.dsv
+[13.108s] -- Symlinking: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_client/share/examples_rclcpp_minimal_client/local_setup.bash
+[13.153s] -- Symlinking: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_client/share/examples_rclcpp_minimal_client/local_setup.sh
+[13.177s] -- Symlinking: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_client/share/examples_rclcpp_minimal_client/local_setup.zsh
+[13.201s] -- Symlinking: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_client/share/examples_rclcpp_minimal_client/local_setup.dsv
+[13.219s] -- Symlinking: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_client/share/examples_rclcpp_minimal_client/package.dsv
+[13.236s] -- Symlinking: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_client/share/ament_index/resource_index/packages/examples_rclcpp_minimal_client
+[13.263s] -- Symlinking: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_client/share/examples_rclcpp_minimal_client/cmake/examples_rclcpp_minimal_clientConfig.cmake
+[13.289s] -- Symlinking: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_client/share/examples_rclcpp_minimal_client/cmake/examples_rclcpp_minimal_clientConfig-version.cmake
+[13.316s] -- Symlinking: /home/dostonbek/ros2_ws/install/examples_rclcpp_minimal_client/share/examples_rclcpp_minimal_client/package.xml
+[13.350s] Invoked command in '/home/dostonbek/ros2_ws/build/examples_rclcpp_minimal_client' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dostonbek/ros2_ws/build/examples_rclcpp_minimal_client

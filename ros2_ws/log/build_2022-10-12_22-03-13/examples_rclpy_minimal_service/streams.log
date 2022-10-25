@@ -1,0 +1,35 @@
+[7.349s] Invoking command in '/home/dostonbek/ros2_ws/build/examples_rclpy_minimal_service': PYTHONPATH=/home/dostonbek/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/dostonbek/ros2_ws/install/examples_rclpy_minimal_service --uninstall --editable --build-directory /home/dostonbek/ros2_ws/build/examples_rclpy_minimal_service/build
+[10.368s] running develop
+[10.372s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[10.373s]   warnings.warn(
+[10.377s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[10.378s]   warnings.warn(
+[10.939s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[10.942s]   warnings.warn(
+[10.943s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[10.943s]   warnings.warn(
+[12.332s] Invoked command in '/home/dostonbek/ros2_ws/build/examples_rclpy_minimal_service' returned '0': PYTHONPATH=/home/dostonbek/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/dostonbek/ros2_ws/install/examples_rclpy_minimal_service --uninstall --editable --build-directory /home/dostonbek/ros2_ws/build/examples_rclpy_minimal_service/build
+[12.339s] Invoking command in '/home/dostonbek/ros2_ws/src/examples/rclpy/services/minimal_service': PYTHONPATH=/home/dostonbek/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_service build --build-base /home/dostonbek/ros2_ws/build/examples_rclpy_minimal_service/build install --prefix /home/dostonbek/ros2_ws/install/examples_rclpy_minimal_service --record /home/dostonbek/ros2_ws/build/examples_rclpy_minimal_service/install.log --single-version-externally-managed
+[16.248s] running egg_info
+[16.262s] writing ../../../../../build/examples_rclpy_minimal_service/examples_rclpy_minimal_service.egg-info/PKG-INFO
+[16.266s] writing dependency_links to ../../../../../build/examples_rclpy_minimal_service/examples_rclpy_minimal_service.egg-info/dependency_links.txt
+[16.269s] writing entry points to ../../../../../build/examples_rclpy_minimal_service/examples_rclpy_minimal_service.egg-info/entry_points.txt
+[16.278s] writing requirements to ../../../../../build/examples_rclpy_minimal_service/examples_rclpy_minimal_service.egg-info/requires.txt
+[16.281s] writing top-level names to ../../../../../build/examples_rclpy_minimal_service/examples_rclpy_minimal_service.egg-info/top_level.txt
+[16.299s] reading manifest file '../../../../../build/examples_rclpy_minimal_service/examples_rclpy_minimal_service.egg-info/SOURCES.txt'
+[16.328s] writing manifest file '../../../../../build/examples_rclpy_minimal_service/examples_rclpy_minimal_service.egg-info/SOURCES.txt'
+[16.330s] running build
+[16.332s] running build_py
+[16.339s] running install
+[16.339s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[16.340s]   warnings.warn(
+[16.352s] running install_lib
+[16.366s] running install_data
+[16.379s] running install_egg_info
+[16.397s] removing '/home/dostonbek/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.10/site-packages/examples_rclpy_minimal_service-0.15.0-py3.10.egg-info' (and everything under it)
+[16.406s] Copying ../../../../../build/examples_rclpy_minimal_service/examples_rclpy_minimal_service.egg-info to /home/dostonbek/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.10/site-packages/examples_rclpy_minimal_service-0.15.0-py3.10.egg-info
+[16.428s] running install_scripts
+[16.699s] Installing service script to /home/dostonbek/ros2_ws/install/examples_rclpy_minimal_service/lib/examples_rclpy_minimal_service
+[16.702s] Installing service_member_function script to /home/dostonbek/ros2_ws/install/examples_rclpy_minimal_service/lib/examples_rclpy_minimal_service
+[16.707s] writing list of installed files to '/home/dostonbek/ros2_ws/build/examples_rclpy_minimal_service/install.log'
+[16.888s] Invoked command in '/home/dostonbek/ros2_ws/src/examples/rclpy/services/minimal_service' returned '0': PYTHONPATH=/home/dostonbek/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_service build --build-base /home/dostonbek/ros2_ws/build/examples_rclpy_minimal_service/build install --prefix /home/dostonbek/ros2_ws/install/examples_rclpy_minimal_service --record /home/dostonbek/ros2_ws/build/examples_rclpy_minimal_service/install.log --single-version-externally-managed

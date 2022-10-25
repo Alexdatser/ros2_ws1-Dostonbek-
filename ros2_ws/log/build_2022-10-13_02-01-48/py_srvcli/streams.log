@@ -1,0 +1,24 @@
+[2.186s] Invoking command in '/home/dostonbek/ros2_ws/src/py_srvcli': PYTHONPATH=/home/dostonbek/ros2_ws/install/py_srvcli/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/dostonbek/ros2_ws/build/py_srvcli/build install --prefix /home/dostonbek/ros2_ws/install/py_srvcli --record /home/dostonbek/ros2_ws/build/py_srvcli/install.log --single-version-externally-managed
+[3.165s] running egg_info
+[3.166s] writing ../../build/py_srvcli/py_srvcli.egg-info/PKG-INFO
+[3.167s] writing dependency_links to ../../build/py_srvcli/py_srvcli.egg-info/dependency_links.txt
+[3.168s] writing entry points to ../../build/py_srvcli/py_srvcli.egg-info/entry_points.txt
+[3.169s] writing requirements to ../../build/py_srvcli/py_srvcli.egg-info/requires.txt
+[3.170s] writing top-level names to ../../build/py_srvcli/py_srvcli.egg-info/top_level.txt
+[3.180s] reading manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'
+[3.183s] writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'
+[3.184s] running build
+[3.184s] running build_py
+[3.185s] running install
+[3.185s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.186s]   warnings.warn(
+[3.186s] running install_lib
+[3.190s] running install_data
+[3.191s] running install_egg_info
+[3.195s] removing '/home/dostonbek/ros2_ws/install/py_srvcli/lib/python3.10/site-packages/py_srvcli-0.0.0-py3.10.egg-info' (and everything under it)
+[3.196s] Copying ../../build/py_srvcli/py_srvcli.egg-info to /home/dostonbek/ros2_ws/install/py_srvcli/lib/python3.10/site-packages/py_srvcli-0.0.0-py3.10.egg-info
+[3.199s] running install_scripts
+[3.271s] Installing client script to /home/dostonbek/ros2_ws/install/py_srvcli/lib/py_srvcli
+[3.272s] Installing service script to /home/dostonbek/ros2_ws/install/py_srvcli/lib/py_srvcli
+[3.274s] writing list of installed files to '/home/dostonbek/ros2_ws/build/py_srvcli/install.log'
+[3.352s] Invoked command in '/home/dostonbek/ros2_ws/src/py_srvcli' returned '0': PYTHONPATH=/home/dostonbek/ros2_ws/install/py_srvcli/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/dostonbek/ros2_ws/build/py_srvcli/build install --prefix /home/dostonbek/ros2_ws/install/py_srvcli --record /home/dostonbek/ros2_ws/build/py_srvcli/install.log --single-version-externally-managed

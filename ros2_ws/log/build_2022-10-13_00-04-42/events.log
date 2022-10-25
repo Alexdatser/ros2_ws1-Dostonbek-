@@ -1,0 +1,123 @@
+[0.000000] (-) TimerEvent: {}
+[0.006072] (-) JobUnselected: {'identifier': 'examples_rclcpp_async_client'}
+[0.006369] (-) JobUnselected: {'identifier': 'examples_rclcpp_cbg_executor'}
+[0.006962] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_action_client'}
+[0.007282] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_action_server'}
+[0.007662] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_client'}
+[0.007955] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_composition'}
+[0.008206] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_publisher'}
+[0.008497] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_service'}
+[0.008746] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_subscriber'}
+[0.009033] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_timer'}
+[0.009283] (-) JobUnselected: {'identifier': 'examples_rclcpp_multithreaded_executor'}
+[0.009571] (-) JobUnselected: {'identifier': 'examples_rclcpp_wait_set'}
+[0.009825] (-) JobUnselected: {'identifier': 'examples_rclpy_executors'}
+[0.010146] (-) JobUnselected: {'identifier': 'examples_rclpy_guard_conditions'}
+[0.010394] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_action_client'}
+[0.010818] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_action_server'}
+[0.011112] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_client'}
+[0.011376] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_publisher'}
+[0.011647] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_service'}
+[0.011931] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_subscriber'}
+[0.012176] (-) JobUnselected: {'identifier': 'examples_rclpy_pointcloud_publisher'}
+[0.012459] (-) JobUnselected: {'identifier': 'launch_testing_examples'}
+[0.012752] (-) JobUnselected: {'identifier': 'my_package'}
+[0.013003] (-) JobUnselected: {'identifier': 'py_pubsub'}
+[0.013290] (-) JobUnselected: {'identifier': 'turtlesim'}
+[0.013543] (py_srvcli) JobQueued: {'identifier': 'py_srvcli', 'dependencies': OrderedDict()}
+[0.013814] (py_srvcli) JobStarted: {'identifier': 'py_srvcli'}
+[0.096609] (-) TimerEvent: {}
+[0.198304] (-) TimerEvent: {}
+[0.299787] (-) TimerEvent: {}
+[0.401127] (-) TimerEvent: {}
+[0.502268] (-) TimerEvent: {}
+[0.603811] (-) TimerEvent: {}
+[0.705078] (-) TimerEvent: {}
+[0.806425] (-) TimerEvent: {}
+[0.907868] (-) TimerEvent: {}
+[1.009137] (-) TimerEvent: {}
+[1.110444] (-) TimerEvent: {}
+[1.213474] (-) TimerEvent: {}
+[1.314914] (-) TimerEvent: {}
+[1.416479] (-) TimerEvent: {}
+[1.525426] (-) TimerEvent: {}
+[1.629318] (-) TimerEvent: {}
+[1.731627] (-) TimerEvent: {}
+[1.832980] (-) TimerEvent: {}
+[1.934315] (-) TimerEvent: {}
+[2.036196] (-) TimerEvent: {}
+[2.137359] (-) TimerEvent: {}
+[2.238843] (-) TimerEvent: {}
+[2.340169] (-) TimerEvent: {}
+[2.441378] (-) TimerEvent: {}
+[2.542877] (-) TimerEvent: {}
+[2.646008] (-) TimerEvent: {}
+[2.747584] (-) TimerEvent: {}
+[2.848862] (-) TimerEvent: {}
+[2.950132] (-) TimerEvent: {}
+[3.051534] (-) TimerEvent: {}
+[3.152880] (-) TimerEvent: {}
+[3.254214] (-) TimerEvent: {}
+[3.271389] (py_srvcli) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_srvcli', 'build', '--build-base', '/home/dostonbek/ros2_ws/build/py_srvcli/build', 'install', '--prefix', '/home/dostonbek/ros2_ws/install/py_srvcli', '--record', '/home/dostonbek/ros2_ws/build/py_srvcli/install.log', '--single-version-externally-managed'], 'cwd': '/home/dostonbek/ros2_ws/src/py_srvcli', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'dostonbek', 'LC_TIME': 'ko_KR.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/dostonbek', 'OLDPWD': '/home/dostonbek/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'SYSTEMD_EXEC_PID': '42036', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/humble/', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'dostonbek', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dostonbek', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/dostonbek-virtual-machine:@/tmp/.ICE-unix/1108,unix/dostonbek-virtual-machine:/tmp/.ICE-unix/1108', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/255f64ff_c8c8_4b29_8ec9_d301afd5e684', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.8H0UT1', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.252', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dostonbek/ros2_ws/build/py_srvcli', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dostonbek/ros2_ws/install/py_srvcli/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[3.355167] (-) TimerEvent: {}
+[3.456513] (-) TimerEvent: {}
+[3.558903] (-) TimerEvent: {}
+[3.661849] (-) TimerEvent: {}
+[3.763738] (-) TimerEvent: {}
+[3.865050] (-) TimerEvent: {}
+[3.966414] (-) TimerEvent: {}
+[4.070311] (-) TimerEvent: {}
+[4.173428] (-) TimerEvent: {}
+[4.274987] (-) TimerEvent: {}
+[4.376229] (-) TimerEvent: {}
+[4.478234] (-) TimerEvent: {}
+[4.579772] (-) TimerEvent: {}
+[4.681196] (-) TimerEvent: {}
+[4.782811] (-) TimerEvent: {}
+[4.820671] (py_srvcli) StdoutLine: {'line': b'running egg_info\n'}
+[4.825244] (py_srvcli) StdoutLine: {'line': b'creating ../../build/py_srvcli/py_srvcli.egg-info\n'}
+[4.827496] (py_srvcli) StdoutLine: {'line': b'writing ../../build/py_srvcli/py_srvcli.egg-info/PKG-INFO\n'}
+[4.829148] (py_srvcli) StdoutLine: {'line': b'writing dependency_links to ../../build/py_srvcli/py_srvcli.egg-info/dependency_links.txt\n'}
+[4.831156] (py_srvcli) StdoutLine: {'line': b'writing entry points to ../../build/py_srvcli/py_srvcli.egg-info/entry_points.txt\n'}
+[4.832678] (py_srvcli) StdoutLine: {'line': b'writing requirements to ../../build/py_srvcli/py_srvcli.egg-info/requires.txt\n'}
+[4.834106] (py_srvcli) StdoutLine: {'line': b'writing top-level names to ../../build/py_srvcli/py_srvcli.egg-info/top_level.txt\n'}
+[4.834904] (py_srvcli) StdoutLine: {'line': b"writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'\n"}
+[4.843175] (py_srvcli) StdoutLine: {'line': b"reading manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'\n"}
+[4.847795] (py_srvcli) StdoutLine: {'line': b"writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'\n"}
+[4.849533] (py_srvcli) StdoutLine: {'line': b'running build\n'}
+[4.850988] (py_srvcli) StdoutLine: {'line': b'running build_py\n'}
+[4.853609] (py_srvcli) StdoutLine: {'line': b'creating /home/dostonbek/ros2_ws/build/py_srvcli/build\n'}
+[4.854293] (py_srvcli) StdoutLine: {'line': b'creating /home/dostonbek/ros2_ws/build/py_srvcli/build/lib\n'}
+[4.855933] (py_srvcli) StdoutLine: {'line': b'creating /home/dostonbek/ros2_ws/build/py_srvcli/build/lib/py_srvcli\n'}
+[4.857359] (py_srvcli) StdoutLine: {'line': b'copying py_srvcli/service_member_function.py -> /home/dostonbek/ros2_ws/build/py_srvcli/build/lib/py_srvcli\n'}
+[4.858017] (py_srvcli) StdoutLine: {'line': b'copying py_srvcli/client_member_function.py -> /home/dostonbek/ros2_ws/build/py_srvcli/build/lib/py_srvcli\n'}
+[4.860630] (py_srvcli) StdoutLine: {'line': b'copying py_srvcli/__init__.py -> /home/dostonbek/ros2_ws/build/py_srvcli/build/lib/py_srvcli\n'}
+[4.861595] (py_srvcli) StdoutLine: {'line': b'running install\n'}
+[4.863138] (py_srvcli) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[4.863875] (py_srvcli) StderrLine: {'line': b'  warnings.warn(\n'}
+[4.864522] (py_srvcli) StdoutLine: {'line': b'running install_lib\n'}
+[4.866419] (py_srvcli) StdoutLine: {'line': b'creating /home/dostonbek/ros2_ws/install/py_srvcli/lib/python3.10/site-packages/py_srvcli\n'}
+[4.867403] (py_srvcli) StdoutLine: {'line': b'copying /home/dostonbek/ros2_ws/build/py_srvcli/build/lib/py_srvcli/service_member_function.py -> /home/dostonbek/ros2_ws/install/py_srvcli/lib/python3.10/site-packages/py_srvcli\n'}
+[4.868752] (py_srvcli) StdoutLine: {'line': b'copying /home/dostonbek/ros2_ws/build/py_srvcli/build/lib/py_srvcli/client_member_function.py -> /home/dostonbek/ros2_ws/install/py_srvcli/lib/python3.10/site-packages/py_srvcli\n'}
+[4.870303] (py_srvcli) StdoutLine: {'line': b'copying /home/dostonbek/ros2_ws/build/py_srvcli/build/lib/py_srvcli/__init__.py -> /home/dostonbek/ros2_ws/install/py_srvcli/lib/python3.10/site-packages/py_srvcli\n'}
+[4.873952] (py_srvcli) StdoutLine: {'line': b'byte-compiling /home/dostonbek/ros2_ws/install/py_srvcli/lib/python3.10/site-packages/py_srvcli/service_member_function.py to service_member_function.cpython-310.pyc\n'}
+[4.876555] (py_srvcli) StdoutLine: {'line': b'byte-compiling /home/dostonbek/ros2_ws/install/py_srvcli/lib/python3.10/site-packages/py_srvcli/client_member_function.py to client_member_function.cpython-310.pyc\n'}
+[4.879297] (py_srvcli) StdoutLine: {'line': b'byte-compiling /home/dostonbek/ros2_ws/install/py_srvcli/lib/python3.10/site-packages/py_srvcli/__init__.py to __init__.cpython-310.pyc\n'}
+[4.880702] (py_srvcli) StdoutLine: {'line': b'running install_data\n'}
+[4.884088] (py_srvcli) StdoutLine: {'line': b'creating /home/dostonbek/ros2_ws/install/py_srvcli/share/ament_index\n'}
+[4.885583] (-) TimerEvent: {}
+[4.888963] (py_srvcli) StdoutLine: {'line': b'creating /home/dostonbek/ros2_ws/install/py_srvcli/share/ament_index/resource_index\n'}
+[4.889700] (py_srvcli) StdoutLine: {'line': b'creating /home/dostonbek/ros2_ws/install/py_srvcli/share/ament_index/resource_index/packages\n'}
+[4.891113] (py_srvcli) StdoutLine: {'line': b'copying resource/py_srvcli -> /home/dostonbek/ros2_ws/install/py_srvcli/share/ament_index/resource_index/packages\n'}
+[4.891733] (py_srvcli) StdoutLine: {'line': b'copying package.xml -> /home/dostonbek/ros2_ws/install/py_srvcli/share/py_srvcli\n'}
+[4.892200] (py_srvcli) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.895435] (py_srvcli) StdoutLine: {'line': b'Copying ../../build/py_srvcli/py_srvcli.egg-info to /home/dostonbek/ros2_ws/install/py_srvcli/lib/python3.10/site-packages/py_srvcli-0.0.0-py3.10.egg-info\n'}
+[4.904574] (py_srvcli) StdoutLine: {'line': b'running install_scripts\n'}
+[4.986155] (-) TimerEvent: {}
+[5.002870] (py_srvcli) StdoutLine: {'line': b'Installing client script to /home/dostonbek/ros2_ws/install/py_srvcli/lib/py_srvcli\n'}
+[5.004498] (py_srvcli) StdoutLine: {'line': b'Installing service script to /home/dostonbek/ros2_ws/install/py_srvcli/lib/py_srvcli\n'}
+[5.006107] (py_srvcli) StdoutLine: {'line': b"writing list of installed files to '/home/dostonbek/ros2_ws/build/py_srvcli/install.log'\n"}
+[5.075522] (py_srvcli) CommandEnded: {'returncode': 0}
+[5.087084] (-) TimerEvent: {}
+[5.153864] (py_srvcli) JobEnded: {'identifier': 'py_srvcli', 'rc': 0}
+[5.160561] (-) EventReactorShutdown: {}

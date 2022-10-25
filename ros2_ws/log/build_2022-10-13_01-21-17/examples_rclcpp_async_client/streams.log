@@ -1,0 +1,2 @@
+[0.140s] Invoking command in '/home/dostonbek/ros2_ws/build/examples_rclcpp_async_client': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dostonbek/ros2_ws/build/examples_rclcpp_async_client -- -j2 -l2
+[0.718s] [100%] Built target client_main
