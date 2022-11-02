@@ -550,7 +550,7 @@ dostonbek@dostonbek-virtual-machine:~/launch$ ros2 topic pub -r 1 /turtlesim1/tu
 
 
 
-#Introspect the sytem with rqt_graph
+### Introspect the sytem with rqt_graph
 ```bash
 dostonbek@dostonbek-virtual-machine:~/launch$ rqt_graph
 
